@@ -7,10 +7,10 @@
 $cmd = htmlspecialchars($_GET["cmd"]);
 $split = explode(' ', $cmd, 3);
 $json = array ('id'=>1,'name'=>"ivan",'country'=>'Russia',"office"=>array("yandex"," management"));
-$json4 = array ('id'=>$split[0],'name'=>$split[1],'country'=>$split[2],"office"=>array('id' => "123123",'id2' => "222222"));
+$json45 = array ('id'=>$split[0],'name'=>$split[1],'country'=>$split[2],"office"=>array('id' => "123123",'id2' => "222222"));
 
 //print_r(array_diff(explode(' ', $cmd, 3),array("")));
-print_r(json_encode($json4, JSON_UNESCAPED_UNICODE));
+print_r(json_encode($json45, JSON_UNESCAPED_UNICODE));
 ?>
 
 
